@@ -1,19 +1,32 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {StyleSheet, View, Text, FlatList, ListRenderItem, TouchableOpacity, Image} from "react-native";
 import {ListingType} from "@/types/listingType";
 import Colors from "@/constants/Colors";
 import {FontAwesome5, Ionicons} from "@expo/vector-icons";
+import {Link} from "expo-router";
 
 
 type Props ={
     listings: any[];
+    category: string;
 
 }
-const Listings = ({listings} : Props) => {
+const Listings = ({listings, category}: Props) => {
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        console.log("Listings loaded");
+        setLoading(true);
+
+        setTimeout(() => {
+            setLoading(false);
+        }, 200);
+    }, [category]);
+
 
      const renderItems:ListRenderItem<ListingType> = ({item}) => {
          return (
-
+        <Link href={`/listing/${item.id}`} asChild>
                <TouchableOpacity>
 
                    <View style={styles.item}>
@@ -54,11 +67,12 @@ const Listings = ({listings} : Props) => {
 
                    </View>
                </TouchableOpacity>
+        </Link>
             )
      }
     return (
         <View style={styles.container}>
-          <FlatList data={listings}
+          <FlatList data={loading ? [] : listings}
                     renderItem={renderItems}
                     horizontal showsHorizontalScrollIndicator={false}
                     contentContainerStyle={styles.list}
