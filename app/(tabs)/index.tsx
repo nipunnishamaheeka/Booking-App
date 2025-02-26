@@ -14,7 +14,8 @@ import Colors from "@/constants/Colors";
 import CategoryButtons from "@/components/CategoryButtons";
 import Listings from "@/components/Listings";
 import listingData from "@/data/destinations.json";
-
+import GroupListing from "@/components/GroupListing";
+import  groupData from "@/data/groups.json";
 
 const handleNotificationPress = () => {
     console.log("Notification button pressed");
@@ -45,6 +46,7 @@ const Page = () => {
             />
 
             <ScrollView style={styles.container}>
+                <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={styles.locationContainer}>
                     <View style={styles.locationWrapper}>
                         <Ionicons name="location" size={24} color="black" />
@@ -70,6 +72,7 @@ const Page = () => {
 
                     <Listings listings={listingData} category={category}/>
 
+                <GroupListing listings={groupData}/>
 
                 {/*<View style={styles.sectionContainer}>*/}
                 {/*    <Text style={styles.sectionTitle}>Near Location</Text>*/}
@@ -97,6 +100,7 @@ const Page = () => {
                 {/*        </View>*/}
                 {/*    </View>*/}
                 {/*</View>*/}
+                </ScrollView>
             </ScrollView>
         </>
     );
