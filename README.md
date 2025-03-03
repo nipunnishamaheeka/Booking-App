@@ -1,50 +1,102 @@
-# Welcome to your Expo app 👋
+# 🏨 Hotel Booking App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A **React Native** hotel and restaurant booking app built with **Expo**, **TypeScript**, and **Firebase**. This app allows users to browse hotels and restaurants, make bookings, and manage their reservations seamlessly. I love it! 👍
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Features
 
-   ```bash
-   npm install
+✅ Browse & select hotels or restaurants 🏨🍽️  
+✅ Secure authentication using **Firebase Auth** 🔒  
+✅ Real-time booking management with **Firestore** ⚡  
+✅ Smooth & responsive UI with **React Native** 📱  
+✅ Built-in image handling & category selection 🖼️  
+✅ Fully typed with **TypeScript** for scalability 🚀  
+
+---
+
+## 🔧 Tech Stack
+
+- **Frontend:** React Native, Expo, TypeScript
+- **Backend:** Firebase Authentication, Firestore Database
+- **State Management:** React Context API / Hooks
+- **Styling:** Styled Components / Custom UI Components
+
+---
+
+## 🚀 Installation & Setup
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/nipunnishamaheeka/HotelBooking-with-Firebase
+   cd hotel-booking-app
    ```
 
-2. Start the app
-
-   ```bash
-    npx expo start
+2. **Install dependencies:**
+   ```sh
+   npm install  # or yarn install
    ```
 
-In the output, you'll find options to open the app in a
+3. **Set up Firebase:**
+   - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+   - Enable **Authentication** (Google, Email/Password, etc.).
+   - Enable **Firestore Database**.
+   - Copy the Firebase config and add it to `constants/firebaseConfig.ts`.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+4. **Run the project:**
+   ```sh
+   npx expo start  # or yarn start
+   ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 📂 Project Structure
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+📦 hotel-booking-app
+├── 📂 app/                 # Main application files
+│   ├── 📂 screens/         # App screens (Home, Booking, Profile, etc.)
+│   ├── 📂 components/      # Reusable components
+│   ├── 📂 hooks/           # Custom React hooks
+│   ├── 📂 constants/       # App-wide constants (Firebase config, etc.)
+│   ├── 📂 data/            # Static data and images
+├── 📂 assets/              # Images, icons, fonts
+├── 📂 types/               # TypeScript interfaces & types
+├── 📜 package.json         # Dependencies & scripts
+├── 📜 app.json             # Expo configuration
+└── 📜 tsconfig.json        # TypeScript configuration
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🎨 UI Previews
 
-To learn more about developing your project with Expo, look at the following resources:
+![Hotel Booking UI](https://via.placeholder.com/800x400?text=Hotel+Booking+App+Preview)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+*(Add screenshots of your app here!)*
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 📌 Future Improvements
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [ ] Implement **payment integration** 💳
+- [ ] Add **push notifications** for booking updates 🔔
+- [ ] Improve UI/UX animations 🎨
+- [ ] Multi-language support 🌍
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 💬 Contact
+
+Created by **Nipun Nishamaheeka** – Let's connect!  
+🔗 [GitHub](https://github.com/nipunnishamaheeka)  
+🔗 [LinkedIn](https://www.linkedin.com/in/nipunnishamaheeka/)  
+
+🚀 Happy Coding! 🎉
+
