@@ -71,11 +71,20 @@ A **React Native** hotel and restaurant booking app built with **Expo**, **TypeS
 
 ## 🎨 UI Previews
 
-![Hotel Booking UI](https://via.placeholder.com/800x400?text=Hotel+Booking+App+Preview)
+Take a look at the sleek and modern design of our Hotel Booking App!  
 
-*(Add screenshots of your app here!)*
+<div align="center">
+  <img src="https://github.com/nipunnishamaheeka/HotelBooking-with-Firebase/blob/master/assets/images/IMG_7623.PNG" width="30%" alt="Hotel Booking UI Preview 1">
+  <img src="https://github.com/nipunnishamaheeka/HotelBooking-with-Firebase/blob/master/assets/images/IMG_7624.PNG" width="30%" alt="Hotel Booking UI Preview 2">
+  <img src="https://github.com/nipunnishamaheeka/HotelBooking-with-Firebase/blob/master/assets/images/IMG_7625.PNG" width="30%" alt="Hotel Booking UI Preview 3">
+  <br>
+  <img src="https://github.com/nipunnishamaheeka/HotelBooking-with-Firebase/blob/master/assets/images/IMG_7626.PNG" width="30%" alt="Hotel Booking UI Preview 4">
+  <img src="https://github.com/nipunnishamaheeka/HotelBooking-with-Firebase/blob/master/assets/images/IMG_7627.PNG" width="30%" alt="Hotel Booking UI Preview 5">
+</div>
 
 ---
+
+
 
 ## 📌 Future Improvements
 
