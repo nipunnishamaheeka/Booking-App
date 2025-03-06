@@ -8,6 +8,7 @@ import listingData from "@/data/destinations.json";
 const ListingDetails = () => {
     const { id } = useLocalSearchParams();
     const router = useRouter();
+
     const listing: ListingType = (listingData as ListingType[]).find(
         (item) => item.id === id
     );

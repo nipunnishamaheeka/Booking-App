@@ -70,7 +70,7 @@ const BookingDetails = () => {
                         checkInDate,
                         checkOutDate,
                         price,
-                        image: "https://via.placeholder.com/400x200",
+                        image: "https://www.hotelscombined.com/rimg/himg/7f/61/7a/expediav2-601348-adb170-787981.jpg?width=968&height=607&crop=true",
                         hostName: data.hostName || "Property Host",
                         guests: data.guests || 1,
                         formattedCheckIn: checkInDate.toLocaleDateString('en-US', {
